@@ -34,7 +34,7 @@ public class Algoritmos {
            }
         }
         else{
-            throw new IllegalArgumentException("Err: n < 1");
+            throw new IllegalArgumentException("Erro: n < 1");
         }
         return s;
     }
@@ -55,6 +55,9 @@ public class Algoritmos {
                 i++;
             }
         }
+        else{
+            throw new IllegalArgumentException("Erro: a ou b < 0");
+        }
         
         return s;
     }
@@ -68,6 +71,9 @@ public class Algoritmos {
                 i++;
             }
         }
+        else{
+            throw new IllegalArgumentException("Erro: x ou y < 0");
+        }
         return potencia;
     }
     
@@ -77,6 +83,9 @@ public class Algoritmos {
         if (0 <= n && n <= 9999){
             i = n / 100;
             j = n % 100;
+        }
+        else{
+            throw new IllegalArgumentException("Erro: n < 0 ou > 9999");
         }
         return Math.pow((i + j), 2) == n;
     }
@@ -91,6 +100,9 @@ public class Algoritmos {
             j = ((n - (100 * i))/10);
             k = n % 10;
         }
+        else{
+            throw new IllegalArgumentException("Erro: n < 0 ou > 9999");
+        }
         
         return (Math.pow(i, 3) + Math.pow(j, 3) + Math.pow(k, 3)) == n;
     }
@@ -102,7 +114,11 @@ public class Algoritmos {
                 if (n % i == 0){
                     return false;
                 }
+                i++;
             }
+        }
+        else{
+            throw new IllegalArgumentException("Erro: n < 1");
         }
         return true;
     }
