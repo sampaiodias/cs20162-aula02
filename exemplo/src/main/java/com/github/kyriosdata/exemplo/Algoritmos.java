@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package somanumeros;
+package com.github.kyriosdata.exemplo;
 
 import java.util.Scanner;
 
@@ -32,6 +32,9 @@ public class Algoritmos {
                s = s + i;
                i++;
            }
+        }
+        else{
+            throw new IllegalArgumentException("Err: n < 1");
         }
         return s;
     }
