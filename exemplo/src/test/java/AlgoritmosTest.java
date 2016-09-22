@@ -10,8 +10,8 @@ import com.github.kyriosdata.exemplo.Algoritmos;
  */
 
 /**
- *
- * @author lucas
+ *Testes dos algoritmos matemáticos das listas 02 e 03 de Construção de Software
+ * @author Lucas Sampaio Dias
  */
 
 public class AlgoritmosTest {
@@ -103,7 +103,7 @@ public class AlgoritmosTest {
     @Test
     public void crivoEratostenes(){
         int a[] = new int[10];
-        Algoritmos.crivoEratostenes(a, 4);
+        Algoritmos.crivoEratostenes(a, 4);  
     }
     
     @Test
