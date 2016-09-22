@@ -103,7 +103,7 @@ public class AlgoritmosTest {
     @Test
     public void crivoEratostenes(){
         int a[] = new int[10];
-        Algoritmos.crivoEratostenes(a, 0);
+        Algoritmos.crivoEratostenes(a, 4);
     }
     
     @Test

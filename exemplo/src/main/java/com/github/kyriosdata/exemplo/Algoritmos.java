@@ -17,11 +17,7 @@ public class Algoritmos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner leitor = new Scanner(System.in);
-        System.out.println("Insira um número: ");
-        int num = Integer.parseInt(leitor.nextLine());
-        System.out.println("A soma dos primeiros números é: " 
-                + somaNaturais(num));
+        
     }
     
     public static int somaNaturais(int n){  
