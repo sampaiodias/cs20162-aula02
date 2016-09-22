@@ -96,7 +96,42 @@ public class AlgoritmosTest {
     }
     
     @Test(expected = IllegalArgumentException.class)
-    public void primo0() {
+    public void primoErro0() {
         assertEquals(false, Algoritmos.primo(0));
+    }
+    
+    @Test
+    public void crivoEratostenes(){
+        int a[] = new int[10];
+        Algoritmos.crivoEratostenes(a, 0);
+    }
+    
+    @Test
+    public void mdc8e4igual4(){
+        assertEquals(4, Algoritmos.mdc(8, 4));
+    }
+    
+    @Test(expected = IllegalArgumentException.class)
+    public void mdcErroNegativo(){
+        Algoritmos.mdc(-1, 2);
+    }
+    
+    @Test(expected = IllegalArgumentException.class)
+    public void mdcErroXMenorQueY(){
+        Algoritmos.mdc(2, 3);
+    }
+    
+    @Test
+    public void numeroHarmonico2igual1ponto5(){
+        float x;
+        x = Algoritmos.numeroHarmonico(2);
+        if (x > 1.49 && x < 1.51){
+            assertEquals(x, Algoritmos.numeroHarmonico(2));
+        }
+    }
+    
+    @Test(expected = IllegalArgumentException.class)
+    public void numeroHarmonicoErroMenorQue2(){
+        Algoritmos.numeroHarmonico(1);
     }
 }

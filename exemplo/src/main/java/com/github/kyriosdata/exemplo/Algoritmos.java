@@ -157,12 +157,19 @@ public class Algoritmos {
                 b = m;
             }
         }
+        else{
+            throw new IllegalArgumentException("Erro: n < 1");
+        }
         return a;
     }
     
-    public static int numeroHarmonico(int n){
+    public static float numeroHarmonico(int n){
         int i = 2;
         int s = 1;
+        
+        if (n < 2){
+            throw new IllegalArgumentException("Erro: n < 2");
+        }
         
         while (i <= n){
             s += (1 / i);
